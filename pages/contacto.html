@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="shortcut icon" href="../assets/img/favicon.ico" type="image/x-ico" />
+    <title>Contacto</title>
+</head>
+
+<!--inicia body-->
+<body class="fondo">
+    <!--inicia header-->
+    <header class="encabezado">
+        <!--logotipo-->
+        <img class="logo" src="../assets/img/zentulogo2.png" alt="logotipo ZenTu">
+        
+        <!--inicia nav-->
+        <nav>
+            <ul class="menu">
+                <li><a class="link" href="../index.html">Inicio</a></li>
+                <li><a class="link" href="./nosotros.html">Nosotros</a></li>
+                <li><a class="link" href="./servicios.html">Servicios</a></li>
+                <li><a class="link" href="./productos.html">Productos</a></li>
+                <li><a class="link" href="./contacto.html">Contacto</a></li>
+            </ul>
+        <!--finaliza nav-->
+        </nav>
+    <!--finaliza header-->
+    </header>
+
+    <main>
+        <section class="sectionPrincipal">
+            <div>
+                <h1 class="titulo"> CONTACTO </h1>
+            </div>
+            <div class="logoGrande">
+                <img src="../assets/img/ZenTu logo (500 × 500 px).png"  alt="logotipo">
+            </div>
+        </section>
+
+        <section class="sectionSecundaria">
+            <div class="imagenInicio">
+                
+                <h2>Contacto</h2>
+                <p class="parrafo">
+                Tel.   +54 011 4152 1455
+                <br>
+                Tel.   +54 011 4152 1456
+                <br>
+                info@zentu.com</p>
+            </div>
+
+            <div class="imagenInicio">
+                
+                <h2>Localizanos</h2>
+                <p class="parrafo">
+                Av. Córdoba 550, C1054 CABA
+                <br>
+                Galeías Pacífico
+                <br>
+                Buenos Aires
+                </p>
+
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.19441077746!2d-58.37696758519533!3d-34.599245164767716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccacb0b1afcaf%3A0x8d53a5cf4f399e9c!2zR2FsZXLDrWFzIFBhY8OtZmljbw!5e0!3m2!1ses!2sar!4v1666744758285!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+            </div>
+
+            <div>
+                <h2>Formulario de contacto</h2>
+            
+                <div>
+                <!--<form action="formulario.html"></form>-->
+                    <form class="formulario">
+                        <fieldset class="field">
+                            <legend class="label">Complete sus datos</legend>
+                            
+                            <div class="label">
+                                <label for="nombre"> Nombre: </label>
+                                <br>
+                                <input class="input" id ="nombre" name="nombre" type="text" minlength="3" maxlength="50" >
+                            </div>
+                        
+                            <div class="label">
+                                <label for="mail">Correo electrónico: </label>
+                                <br>
+                                <input class="input" id="mail" name="mail" type="email" >
+                            </div>
+
+                            <div class="label">
+                                <label for="telefono">Teléfono: </label>
+                                <br>
+                                <input class="input" id="telefono" name="telefono" type="text" >
+                            </div>
+                        </fieldset>
+                        
+                    <fieldset class="field">
+                        <legend class="label">¿En qué procedimiento estaría interesada/o?</legend>
+                            
+                        <div class="label">
+                            <input id="arrugas" name="tratamientos" type="checkbox" value="arrugas"  >
+                            <label for="arrugas">Arrugas
+                            </label>
+
+                            <input id="vitaminas" name="tratamientos" type="checkbox" value="vitaminas" >
+                            <label for="vitaminas">PHP
+                            </label>
+                            
+                            <input id="rejuvenecimiento" name="tratamientos" type="checkbox" value="rejuvenecimiento" >
+                            <label for="rejuvenecimiento">Rejuvenecimiento
+                            </label>
+
+                            <input id="belleza" name="tratamientos" type="checkbox" value="belleza" >
+                            <label for="belleza">Espacio de belleza y bienestar</label>
+                            
+                            <input id="nutricion" name="tratamientos" type="checkbox" value="nutricion">
+                            <label for="nutricion">Nutrición
+                            </label>
+
+                            <input id="manchas" name="tratamientos" type="checkbox" value="manchas">
+                            <label for="manchas">Manchas
+                            </label>
+
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="field">
+                        <legend class="label"> Dejenos un comentario </legend>
+                        <textarea  name="comentario" id="comentario" cols="170" rows="8" ></textarea>
+                    </fieldset>
+
+                    <div><input id="enviar" type="submit" value="Enviar"></div>
+                        
+                </form>      
+            </div>
+        </section>
+
+    </main>
+
+    <!--inicia footer-->
+    <footer class="footer">
+        <div>
+            <img class="logoFooter" src="../assets/img/zentulogo2.png" alt="logotipo ZenTu">
+
+            <p class="footerTitle">Información de contacto</p>
+        </div>
+        <br>
+
+        <div class="center" >
+            <div class="medio">
+                <a  href="../pages/contacto.html"><img src="../assets/img/home.png" alt="direccion"></a>  
+                <p class="footerText">Dirección de contacto </p>
+            
+
+                <a href="../pages/contacto.html"><img src="../assets/img/phone.png" alt="telefono"> </a>
+                <p class="footerText">Teléfono de contacto </p>
+            </div>
+        <br>
+
+            <div class="medio">
+                <a href="../pages/contacto.html"><img src="../assets/img/location.png" alt="mapa">   </a>
+                <p class="footerText">Localizanos en el mapa</p>
+
+                <a href="../pages/contacto.html"><img src="../assets/img/pencil.png" alt="formulario"></a>  
+                <p class="footerText">Formulario de contacto</p>
+            </div>
+
+        </div>
+
+        <br>
+        <div class="center">
+            <a href="https://www.instagram.com/"><img src="../assets/img/instagram.svg" class="redes" alt="instagram" ></a>
+
+            <a href="https://twitter.com/"><img src="../assets/img/twitter.svg" class="redes" alt="twitter" ></a>
+
+            <a href="https://www.facebook.com/"><img src="../assets/img/facebook.svg" class="redes" alt="facebook"></a>
+        </div>
+    <!--finaliza footer-->
+    </footer>
+
+</body>
+</html>
+
