@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../assets/img/favicon.ico" type="image/x-ico" />
+    <link rel="stylesheet"    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/styles.css">
     <title>Servicios</title>
@@ -15,7 +16,7 @@
     <!--inicia header-->
     <header class="encabezado">
         <!--logotipo-->
-        <img class="logo" src="../assets/img/zentulogo2.png" alt="logotipo ZenTu">
+        <img class="logo animate__animated animate__pulse" src="../assets/img/zentulogo2.png" alt="logotipo ZenTu">
         
         <!--inicia nav-->
         <nav>
@@ -34,7 +35,7 @@
     <main>
         <section class="sectionPrincipal">
             <div>
-                <h1 class="titulo"> SERVICIOS </h1>
+                <h1 class="titulo animate__animated animate__pulse"> SERVICIOS </h1>
             </div>
             <div class="logoGrande">
                 <img src="../assets/img/ZenTu logo (500 × 500 px).png"  alt="logotipo">
@@ -42,69 +43,98 @@
             
         </section>
 
-        <section class="sectionSecundaria">
-            <div class="imagenInicio">
-                <img src="../assets/img/faciales.png" alt="tratamientos faciales"  >
-                <h2>Tratamientos Faciales</h2>
-                <p class="parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, ad saepe. Laborum reprehenderit placeat, quae vero vitae repellat asperiores tempora corporis ab qui autem veniam. Tempore commodi velit aperiam libero.</p>
+        <div class="container sectionSecundaria">
+            <div class="row imagenInicio">
+                <div class="col">
+                    <a href="#faciales"><img src="../assets/img/faciales.png" alt="tratamientos faciales"  >
+                    <h2>Tratamientos Faciales</h2></a>
+                    <p class="parrafo">Tratamientos faciales específicos según el tipo y las necesidades de cada piel para mejorar el aspecto del rostro.</p>
+                </div>
+                <div class="col imagenInicio">
+                    <a href="#corporales"><img src="../assets/img/corporales.png" alt="tratamientos corporales" >
+                    <h2>Tratamientos corporales</h2></a>
+                    <p class="parrafo">Tratamiento exfoliante e hidratante ideal para la regeneración de la piel gracias a los minerales y oligoelementos.</p>
+                </div>
+                <div class="col imagenInicio">
+                    <a href="#piel"><img src="../assets/img/piel.png" alt="cuidados de la piel" >
+                    <h2>Cuidados de la piel</h2></a>
+                    <p class="parrafo">Estudio que nos permite determinar el estado de la piel del paciente a través de varios parámetros.</p>
+                </div>
             </div>
+        </div>
+        
+        <div class="container-fluid">
+            <div class="row ">
+                <div class="col imagenInicio">
+                    <img src="../assets/img/faciales.png" id="faciales" alt="tratamientos faciales">
+                </div>
+                <div class="col parrafo align-self-center">
+                    <p>TOXINA BOTULÍNICA
+                        Este tratamiento nos ayuda a disminuir las arrugas de expresión a través de pequeñas inyecciones, las cuales impiden que el músculo se contraiga evitando la formación de arrugas, otorgando una apariencia más joven y fresca. </p>
+                    <p>MESOTOX SOLUTION
+                        Es una mesoterapia importada de origen español que actúa de forma dual sobre las arrugas de expresión reduciendo las ya existentes y previniendo la aparición de nuevas.</p>
+                </div>
+            </div>
+            <div class="row ">    
+                <div class="col imagenInicio">
+                    <img src="../assets/img/corporales.png" id="corporales" alt="tratamientos corporales" >
+                </div>
+                <div class="col parrafo align-self-center">
+                    <p>Exfoliación y envoltura reafirmante
+                        Tratamiento exfoliante a base de sales de rocas minerales, protege eficazmente contra los radicales libres y aporta una gran vitalidad e hidratación gracias a los minerales y oligoelementos, es un  gran renovador celular, su  envoltura reafirmante a base de arcilla roja y  fitoactivos  y su hidratación final hacen de este tratamiento un imprescindible durante todo el año.
+                        
+                        Duración del tratamiento: 30 minutos</p>
+                </div>
+            </div>
+            <div class="row ">    
+                <div class="col imagenInicio"><img src="../assets/img/piel.png" id="piel" alt="cuidados de la piel" ></div>
+                <div class="col parrafo align-self-center ">
+                    <p>Llevamos a cabo un estudio de alta tecnología en biofísica digital que permite determinar objetivamente y documentar los parámetros cutáneos de cada paciente. Los parámetros biofísicos evaluados son: hidratación, elasticidad, queratina, sebo, porosidad, arrugas, manchas y relieve cutáneo.
 
-            <div class="imagenInicio">
-                <img src="../assets/img/corporales.png" alt="tratamientos corporales" >
-                <h2>Tratamientos corporales</h2>
-                <p class="parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos qui, blanditiis soluta ipsam quia cupiditate cumque quo rerum suscipit quaerat animi sit itaque dolor quod explicabo. Consequuntur voluptatum adipisci possimus.</p>
+                    A partir de este estudio se realiza un análisis de los resultados para poder diagnosticar el estado de la piel, guiar su cuidado mediante recomendaciones individualizadas y contar con un historial completo de cada paciente.
+                        
+                    Este es un análisis de imagen dermatológico (Image DB) que permite analizar, comparar y comentar imágenes específicas del paciente marcando, midiendo distancias y superficies, estableciendo líneas de perfil cutáneo y transformándolo en 3D para su posterior impresión y presentación. Además permite comparar el estado real de la piel del paciente con el estado estándar correspondiente a su edad.</p>
+                </div>
             </div>
+        </div>
 
-            <div class="imagenInicio">
-                <img src="../assets/img/piel.png" alt="cuidados de la piel" >
-                <h2>Cuidados de la piel</h2>
-                <p class="parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate saepe exercitationem cum temporibus ducimus corporis ea numquam ratione quas iusto? Doloremque mollitia quod magni rem est vitae tenetur officia natus.</p>
-            </div>
-        </section>
+            
 
     </main>
 
 
     <!--inicia footer-->
-    <footer class="footer">
-        <div>
-            <img class="logoFooter" src="../assets/img/zentulogo2.png" alt="logotipo ZenTu">
+<footer class="footer">
+    <div class="container">
+        <!--<img class="logoFooter" src="./assets/img/zentulogo2.png" alt="logotipo ZenTu">-->
 
-            <p class="footerTitle">Información de contacto</p>
-        </div>
-        <br>
-
-        <div class="center" >
-            <div class="medio">
-                <a  href="../pages/contacto.html"><img src="../assets/img/home.png" alt="direccion"></a>  
+        <p class="footerTitle center">Información de contacto</p>
+    
+        <div class="row row-cols-2">
+            <div class="col justify-content center"><a  href="../pages/contacto.html#contacto"><img src="../assets/img/home.png" alt="direccion"></a>  
                 <p class="footerText">Dirección de contacto </p>
-            
-
-                <a href="../pages/contacto.html"><img src="../assets/img/phone.png" alt="telefono"> </a>
+            </div>
+            <div class="col justify-content center"><a href="../pages/contacto.html#contacto"><img src="../assets/img/phone.png" alt="telefono"> </a>
                 <p class="footerText">Teléfono de contacto </p>
             </div>
-        <br>
-
-            <div class="medio">
-                <a href="../pages/contacto.html"><img src="../assets/img/location.png" alt="mapa">   </a>
+            <div class="col justify-content center"><a href="../pages/contacto.html#contacto"><img src="../assets/img/location.png" alt="mapa">   </a>
                 <p class="footerText">Localizanos en el mapa</p>
-
-                <a href="../pages/contacto.html"><img src="../assets/img/pencil.png" alt="formulario"></a>  
+            </div>
+            <div class="col justify-content center"><a href="../pages/contacto.html#formulario"><img src="../assets/img/pencil.png" alt="formulario"></a>  
                 <p class="footerText">Formulario de contacto</p>
             </div>
-
         </div>
-
         <br>
-        <div class="center">
-            <a href="https://www.instagram.com/"><img src="../assets/img/instagram.svg" class="redes" alt="instagram" ></a>
+    <div class="center">
+        <a href="https://www.instagram.com/"><img src="../assets/img/instagram.svg" class="redes animate__animated animate__pulse" alt="instagram" ></a>
 
-            <a href="https://twitter.com/"><img src="../assets/img/twitter.svg" class="redes" alt="twitter" ></a>
+        <a href="https://twitter.com/"><img src="../assets/img/twitter.svg" class="redes animate__animated animate__pulse" alt="twitter" ></a>
 
-            <a href="https://www.facebook.com/"><img src="../assets/img/facebook.svg" class="redes" alt="facebook"></a>
-        </div>
-    <!--finaliza footer-->
-    </footer>
+        <a href="https://www.facebook.com/"><img src="../assets/img/facebook.svg" class="redes animate__animated animate__pulse" alt="facebook"></a>
+    </div>
+    </div>
+<!--finaliza footer-->
+</footer>
     <script src="../js/bootstrap.bundle.min.js"></script>
 
 </body>
