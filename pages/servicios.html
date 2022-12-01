@@ -14,90 +14,176 @@
 <!--inicia body-->
 <body class="fondo">
     <!--inicia header-->
-    <header class="encabezado">
-        <!--logotipo-->
-        <img class="logo animate__animated animate__pulse" src="../assets/img/zentulogo2.png" alt="logotipo ZenTu">
-        
+    <header class="sticky-top">        
         <!--inicia nav-->
-        <nav>
-            <ul class="menu">
-                <li><a class="link" href="../index.html">Inicio</a></li>
-                <li><a class="link" href="./nosotros.html">Nosotros</a></li>
-                <li><a class="link" href="./servicios.html">Servicios</a></li>
-                <li><a class="link" href="./productos.html">Productos</a></li>
-                <li><a class="link" href="./contacto.html">Contacto</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-md navbar-light encabezado ">
+            <div class="container-fluid ">
+                <!--logotipo-->
+                <a class="navbar-brand" href="../index.html">
+                    <img class="logo " src="../assets/img/zentulogo2.png" alt="logotipo ZenTu"> 
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+
+
+            <div class="collapse navbar-collapse " id="navbarTogglerDemo02">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 menu">
+                        <li><a class="link" href="../index.html">Inicio</a></li>
+                        <li><a class="link" href="../pages/nosotros.html">Nosotros</a></li>
+                        <li><a class="link" href="../pages/servicios.html">Servicios</a></li>
+                        <li><a class="link" href="../pages/productos.html">Productos</a></li>
+                        <li><a class="link" href="../pages/contacto.html">Contacto</a></li>
+                    </ul>
+                </ul>
+            </div>
+            </div>
         <!--finaliza nav-->
         </nav>
-    <!--finaliza header-->
+    <!--finaliza header-->    
     </header>
 
     <main>
+        <!--comienza seccion principal-->
         <section class="sectionPrincipal">
             <div>
                 <h1 class="titulo animate__animated animate__pulse"> SERVICIOS </h1>
             </div>
-            <div class="logoGrande">
-                <img src="../assets/img/ZenTu logo (500 × 500 px).png"  alt="logotipo">
+            <!--inicia carrousel-->
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <video class="img-fluid" autoplay loop muted>
+                        <source src="../assets/videos/Encabezado.mp4" type="video/mp4" />
+                        </video>
+                    </div>
+                    <div class="carousel-item">
+                        <video class="img-fluid " autoplay loop muted>
+                            <source src="../assets/videos/Encabezado2.mp4" type="video/mp4" />
+                            </video>
+                    </div>
+                    <div class="carousel-item">
+                        <video class="img-fluid" autoplay loop muted>
+                            <source src="../assets/videos/encabezadovideo.mp4" type="video/mp4" />
+                        </video>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
-            
+            <!--fnaliza carrousel-->
         </section>
+        <!--finaliza seccion principal-->
 
-        <div class="container sectionSecundaria">
+        <!--comienza seccion secundaria-->
+        <section class="sectionSecundaria">
+        <div class="container-fluid ">
             <div class="row imagenInicio">
-                <div class="col">
-                    <a href="#faciales"><img src="../assets/img/faciales.png" alt="tratamientos faciales"  >
-                    <h2>Tratamientos Faciales</h2></a>
-                    <p class="parrafo">Tratamientos faciales específicos según el tipo y las necesidades de cada piel para mejorar el aspecto del rostro.</p>
+
+                <div class="col md-3 sm-1">
+                    <div class="imagenInicio sectionSecundaria">
+                        <a href="#faciales">
+                            <figure class="snip1585">
+                                <img src="../assets/img/faciales.png" alt="tratamientos faciales" id="f1" >
+                                <figcaption>
+                                    <h2>Tratamientos Faciales</h2>
+                                </figcaption>
+                            </figure>
+                        <h2>Tratamientos faciales</h2></a>
+                        <p class="parrafo fw-light ">Tratamientos faciales específicos según el tipo y las necesidades de cada piel para mejorar el aspecto del rostro.</p>
+                    </div>
                 </div>
-                <div class="col imagenInicio">
-                    <a href="#corporales"><img src="../assets/img/corporales.png" alt="tratamientos corporales" >
-                    <h2>Tratamientos corporales</h2></a>
-                    <p class="parrafo">Tratamiento exfoliante e hidratante ideal para la regeneración de la piel gracias a los minerales y oligoelementos.</p>
+
+                <div class="col md-3 sm-1">
+                    <div class="imagenInicio sectionSecundaria">
+                        <a href="#corporales">
+                            <figure class="snip1585">
+                                <img src="../assets/img/corporales.png" alt="tratamientos corporales" id="c1" >
+                                <figcaption>
+                                    <h2>Tratamientos corporales</h2>
+                                </figcaption>
+                            </figure>
+                        <h2>Tratamientos corporales</h2></a>
+                        <p class="parrafo fw-light">Tratamiento exfoliante e hidratante ideal para la regeneración de la piel gracias a los minerales y oligoelementos.</p>
+                    </div>
                 </div>
-                <div class="col imagenInicio">
-                    <a href="#piel"><img src="../assets/img/piel.png" alt="cuidados de la piel" >
-                    <h2>Cuidados de la piel</h2></a>
-                    <p class="parrafo">Estudio que nos permite determinar el estado de la piel del paciente a través de varios parámetros.</p>
+                
+                <div class="col md-3 sm-1 ">
+                    <div class="imagenInicio sectionSecundaria">
+                        <a href="#piel">
+                            <figure class="snip1585">
+                                <img src="../assets/img/piel.png" alt="cuidados de la piel" id="p1" >
+                                <figcaption>
+                                    <h2>Cuidados de la piel</h2>
+                                </figcaption>
+                            </figure>
+                        <h2>Cuidados de la piel</h2></a>
+                        <p class="parrafo hypens">Estudio que nos permite determinar el estado de la piel del paciente a través de varios parámetros.</p>
+                    </div>
                 </div>
-            </div>
         </div>
         
         <div class="container-fluid">
             <div class="row ">
-                <div class="col imagenInicio">
-                    <img src="../assets/img/faciales.png" id="faciales" alt="tratamientos faciales">
+                <div class="col-sm-12 col-md-12 col-lg-6 imagenInicio mt-5">
+                    <a href="#f1"> 
+                        <img src="../assets/img/faciales.png" id="faciales" alt="tratamientos faciales">
+                    </a>
                 </div>
-                <div class="col parrafo align-self-center">
-                    <p>TOXINA BOTULÍNICA
+                <div class="col-sm-12 col-md-12 col-lg-6 imagenInicio mt-5 parrafo align-self-center">
+                    <h2>Tratamientos faciales</h2>
+                    <p class="parrafo hypens"> TOXINA BOTULÍNICA
                         Este tratamiento nos ayuda a disminuir las arrugas de expresión a través de pequeñas inyecciones, las cuales impiden que el músculo se contraiga evitando la formación de arrugas, otorgando una apariencia más joven y fresca. </p>
-                    <p>MESOTOX SOLUTION
+                    <p class="parrafo hypens">MESOTOX SOLUTION
                         Es una mesoterapia importada de origen español que actúa de forma dual sobre las arrugas de expresión reduciendo las ya existentes y previniendo la aparición de nuevas.</p>
                 </div>
             </div>
             <div class="row ">    
-                <div class="col imagenInicio">
-                    <img src="../assets/img/corporales.png" id="corporales" alt="tratamientos corporales" >
+                <div class="col-sm-12 col-md-12 col-lg-6 imagenInicio mt-5">
+                    <a href="#c1"> 
+                        <img src="../assets/img/corporales.png" id="corporales" alt="tratamientos corporales" >
+                    </a>
                 </div>
-                <div class="col parrafo align-self-center">
-                    <p>Exfoliación y envoltura reafirmante
-                        Tratamiento exfoliante a base de sales de rocas minerales, protege eficazmente contra los radicales libres y aporta una gran vitalidad e hidratación gracias a los minerales y oligoelementos, es un  gran renovador celular, su  envoltura reafirmante a base de arcilla roja y  fitoactivos  y su hidratación final hacen de este tratamiento un imprescindible durante todo el año.
-                        
+
+                <div class="col-sm-12 col-md-12 col-lg-6 imagenInicio mt-5 parrafo align-self-center">
+                    <h2>Tratamientos corporales</h2>
+                    <p class="parrafo hypens">Exfoliación y envoltura reafirmante.</p>
+                    <p class="parrafo hypens">Tratamiento exfoliante a base de sales de rocas minerales, protege eficazmente contra los radicales libres y aporta una gran vitalidad e hidratación gracias a los minerales y oligoelementos, es un  gran renovador celular, su  envoltura reafirmante a base de arcilla roja y  fitoactivos  y su hidratación final hacen de este tratamiento un imprescindible durante todo el año.
+                    </p>
+                    <p class="parrafo hypens">  
                         Duración del tratamiento: 30 minutos</p>
                 </div>
             </div>
             <div class="row ">    
-                <div class="col imagenInicio"><img src="../assets/img/piel.png" id="piel" alt="cuidados de la piel" ></div>
-                <div class="col parrafo align-self-center ">
-                    <p>Llevamos a cabo un estudio de alta tecnología en biofísica digital que permite determinar objetivamente y documentar los parámetros cutáneos de cada paciente. Los parámetros biofísicos evaluados son: hidratación, elasticidad, queratina, sebo, porosidad, arrugas, manchas y relieve cutáneo.
-
-                    A partir de este estudio se realiza un análisis de los resultados para poder diagnosticar el estado de la piel, guiar su cuidado mediante recomendaciones individualizadas y contar con un historial completo de cada paciente.
-                        
+                <div class="col-sm-12 col-md-12 col-lg-6 imagenInicio mt-5">
+                    <a href="#p1">
+                        <img src="../assets/img/piel.png" id="piel" alt="cuidados de la piel" >
+                    </a>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-6 imagenInicio mt-5 parrafo align-self-center">
+                    <h2>Cuidados de la piel</h2>
+                    <p class="parrafo hypens">Llevamos a cabo un estudio de alta tecnología en biofísica digital que permite determinar objetivamente y documentar los parámetros cutáneos de cada paciente. Los parámetros biofísicos evaluados son: hidratación, elasticidad, queratina, sebo, porosidad, arrugas, manchas y relieve cutáneo. </p>
+                    </p>  
+                    <p class="parrafo hypens">
+                    A partir de este estudio se realiza un análisis de los resultados para poder diagnosticar el estado de la piel, guiar su cuidado mediante recomendaciones individualizadas y contar con un historial completo de cada paciente.</p>
+                    <p class="parrafo hypens">   
                     Este es un análisis de imagen dermatológico (Image DB) que permite analizar, comparar y comentar imágenes específicas del paciente marcando, midiendo distancias y superficies, estableciendo líneas de perfil cutáneo y transformándolo en 3D para su posterior impresión y presentación. Además permite comparar el estado real de la piel del paciente con el estado estándar correspondiente a su edad.</p>
                 </div>
             </div>
         </div>
-
+        </section>
             
 
     </main>
@@ -105,32 +191,36 @@
 
     <!--inicia footer-->
 <footer class="footer">
-    <div class="container">
+    <div class="container-fluid">
         <!--<img class="logoFooter" src="./assets/img/zentulogo2.png" alt="logotipo ZenTu">-->
 
         <p class="footerTitle center">Información de contacto</p>
     
         <div class="row row-cols-2">
-            <div class="col justify-content center"><a  href="../pages/contacto.html#contacto"><img src="../assets/img/home.png" alt="direccion"></a>  
+            <div class="col-12 col-sm-6 justify-content center"><a  href="../pages/contacto.html#contacto"><img src="../assets/img/home.png" class="animated swing "  alt="direccion"></a>  
                 <p class="footerText">Dirección de contacto </p>
             </div>
-            <div class="col justify-content center"><a href="../pages/contacto.html#contacto"><img src="../assets/img/phone.png" alt="telefono"> </a>
+            <div class="col-12 col-sm-6 justify-content center"><a href="../pages/contacto.html#contacto"><img src="../assets/img/phone.png" class="animated swing "  alt="telefono"> </a>
                 <p class="footerText">Teléfono de contacto </p>
             </div>
-            <div class="col justify-content center"><a href="../pages/contacto.html#contacto"><img src="../assets/img/location.png" alt="mapa">   </a>
+            <div class="col-12 col-sm-6 justify-content center"><a href="../pages/contacto.html#contacto"><img src="../assets/img/location.png" class="animated swing "  alt="mapa">   </a>
                 <p class="footerText">Localizanos en el mapa</p>
             </div>
-            <div class="col justify-content center"><a href="../pages/contacto.html#formulario"><img src="../assets/img/pencil.png" alt="formulario"></a>  
+            <div class="col-12 col-sm-6 justify-content center">
+                <a href="../pages/contacto.html#formulario"><img src="../assets/img/pencil.png" class="animated swing " alt="formulario"></a>  
+                
                 <p class="footerText">Formulario de contacto</p>
             </div>
         </div>
         <br>
     <div class="center">
-        <a href="https://www.instagram.com/"><img src="../assets/img/instagram.svg" class="redes animate__animated animate__pulse" alt="instagram" ></a>
+        <a href="https://www.instagram.com/" target="_blank"><img src="../assets/img/instagram.svg" class="redes icon" alt="instagram" ></a>
 
-        <a href="https://twitter.com/"><img src="../assets/img/twitter.svg" class="redes animate__animated animate__pulse" alt="twitter" ></a>
+        <a href="https://twitter.com/" target="_blank"><img src="../assets/img/twitter.svg" class="redes icon icont" alt="twitter" ></a>
 
-        <a href="https://www.facebook.com/"><img src="../assets/img/facebook.svg" class="redes animate__animated animate__pulse" alt="facebook"></a>
+        <a href="https://www.facebook.com/" target="_blank"><img src="../assets/img/facebook.svg" class="redes icon iconf " alt="facebook"></a>
+
+        <a href="https://www.youtube.com/" target="_blank"><img src="../assets/img/yt.svg" class="redes icon icony " alt="youtube"></a>
     </div>
     </div>
 <!--finaliza footer-->

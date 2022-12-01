@@ -13,25 +13,36 @@
 
 <!--inicia body-->
 <body class="fondo">
+
     <!--inicia header-->
-    <header class="encabezado">
-        <!--logotipo-->
-        <img class="logo animate__animated animate__pulse" src="./assets/img/zentulogo2.png" alt="logotipo ZenTu">
-        
+    <header class="sticky-top" >        
         <!--inicia nav-->
-        <nav>
-            <ul class="menu">
-                <li><a class="link" href="index.html">Inicio</a></li>
-                <li><a class="link" href="./pages/nosotros.html">Nosotros</a></li>
-                <li><a class="link" href="./pages/servicios.html">Servicios</a></li>
-                <li><a class="link" href="./pages/productos.html">Productos</a></li>
-                <li><a class="link" href="./pages/contacto.html">Contacto</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-md navbar-light encabezado">
+            <div class="container-fluid ">
+                <!--logotipo-->
+                <a class="navbar-brand" href="#">
+                    <img class="logo " src="./assets/img/zentulogo2.png" alt="logotipo ZenTu"> 
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+
+
+            <div class="collapse navbar-collapse " id="navbarTogglerDemo02">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 menu">
+                        <li><a class="link" href="index.html">Inicio</a></li>
+                        <li><a class="link" href="./pages/nosotros.html">Nosotros</a></li>
+                        <li><a class="link" href="./pages/servicios.html">Servicios</a></li>
+                        <li><a class="link" href="./pages/productos.html">Productos</a></li>
+                        <li><a class="link" href="./pages/contacto.html">Contacto</a></li>
+                    </ul>
+                </ul>
+            </div>
+            </div>
         <!--finaliza nav-->
         </nav>
-        
-        
-    <!--finaliza header-->
+    <!--finaliza header-->    
     </header>
     
 
@@ -40,70 +51,100 @@
         <div class="container">
             <section class="sectionPrincipal">
                 <div>
-                    <h1 class="titulo animate__animated animate__pulse"> INICIO </h1>
+                    <h1 class="titulo animate__animated animate__pulse "> INICIO </h1>
                 </div>
-                <div class="logoGrande">
-                    <img src="./assets/img/ZenTu logo (500 × 500 px).png"  alt="logotipo">
+                
+                <!--inicia carrousel-->
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <video class="img-fluid" autoplay loop muted>
+                            <source src="./assets/videos/Encabezado.mp4" type="video/mp4" />
+                            </video>
+                        </div>
+                    <div class="carousel-item">
+                        <video class="img-fluid " autoplay loop muted>
+                            <source src="./assets/videos/Encabezado2.mp4" type="video/mp4" />
+                            </video>
+                    </div>
+                    <div class="carousel-item">
+                        <video class="img-fluid" autoplay loop muted>
+                            <source src="./assets/videos/encabezadovideo.mp4" type="video/mp4" />
+                        </video>
+                    </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
+                <!--fnaliza carrousel-->
             </section>
 
             
 
 
             <div>
-                <div class="intro">
-                    <p class="parrafo fst-italic">ENTENDEMOS A CADA GENERACIÓN.  SABEMOS LO QUE BUSCAN.  TENEMOS LO QUE NECESITAN</p>
+                <div >
+                    <p class="parrafo fst-italic center">ENTENDEMOS A CADA GENERACIÓN.  SABEMOS LO QUE BUSCAN.  TENEMOS LO QUE NECESITAN</p>
                     
 
                 </div>
-                <div class="intro">
-                    <p class="parrafo interlineado">El holismo en Medicina Estética consiste en apostar por un abordaje de la belleza integral, tratando de armonizar y cuidar los 3 pilares fundamentales: el físico, el interior y el estado emocional.</p>
+                <div >
+                    <p class="parrafo interlineado center">El holismo en Medicina Estética consiste en apostar por un abordaje de la belleza integral, tratando de armonizar y cuidar los 3 pilares fundamentales: el físico, el interior y el estado emocional.</p>
                 </div>
             </div>
 
 
-
-            
             <div class="container">
-                <div class="row">
-                    <div class="col">
+                <div class="row sectionSecundaria">
+                    <div class="col-sm-12 col-md-6 col-lg-4 imagenInicio">
                         <div class="imagenInicio sectionSecundaria">
                             
                             <a href="./pages/nosotros.html">
                                 <figure class="snip1585">
-                                    <img src="./assets/img/nosotros.png" alt="nosotros" />
+                                    <img src="./assets/img/nosotros.png" alt="nosotros">
                                     <figcaption>
-                                        <h3>Nostros</h3>
+                                        <h3>Nosotros</h3>
                                     </figcaption>
                                 </figure>
                             <h2>Nosotros</h2></a>
-                            <p class="parrafo fw-light">Somos un equipo de profesionales que se esfuerza continuamente en mejorar la salud de nuestros pacientes contribuyendo a su bienestar.</p>
+                            <p class="parrafo fw-light hypens">Somos un equipo de profesionales que se esfuerza continuamente en mejorar la salud de nuestros pacientes contribuyendo a su bienestar.</p>
                         </div>
                     </div>
-                    <div class="col">
+                    <div class="col-sm-12 col-md-6 col-lg-4 imagenInicio">
                         <div class="imagenInicio sectionSecundaria">
                             <a href="./pages/servicios.html">
                                 <figure class="snip1585">
-                                    <img src="./assets/img/services.png" alt="servicios" />
+                                    <img src="./assets/img/services.png" alt="servicios">
                                     <figcaption>
                                         <h3>Servicios</h3>
                                     </figcaption>
                                 </figure>
                             <h2>Servicios</h2></a>
-                            <p class="parrafo fw-light">Porque consideramos que la base de una piel sana es una piel limpia y fresca, hemos desarrollado un espacio para poder ofrecerte una alternativa distinta para tu cuidado personal</p>
+                            <p class="parrafo fw-light hypens">Porque consideramos que la base de una piel sana es una piel limpia y fresca, hemos desarrollado un espacio para poder ofrecerte una alternativa distinta para tu cuidado personal</p>
                         </div>
                     </div>
-                    <div class="col">
+                    <div class="col-sm-12 col-md-12 col-lg-4 imagenInicio">
                         <div class="imagenInicio sectionSecundaria">
                             <a href="./pages/productos.html">
                                 <figure class="snip1585">
-                                    <img src="./assets/img/productos.png" alt="productos" />
+                                    <img src="./assets/img/productos.png" alt="productos">
                                     <figcaption>
                                         <h3>Productos</h3>
                                     </figcaption>
                                 </figure>
                             <h2>Productos</h2></a>
-                            <p class="parrafo fw-light">Línea de productos de aceites, colágeno y proteínas</p>
+                            <p class="parrafo fw-light hypens">Línea de productos de aceites, colágeno y proteínas</p>
                         </div>
                     </div>
                 </div>
@@ -113,38 +154,43 @@
     </main>
     
     <!--inicia footer-->
-    <footer class="footer">
-        <div class="container">
-            <!--<img class="logoFooter" src="./assets/img/zentulogo2.png" alt="logotipo ZenTu">-->
+<footer class="footer">
+    <div class="container-fluid">
+        <!--<img class="logoFooter" src="./assets/img/zentulogo2.png" alt="logotipo ZenTu">-->
 
-            <p class="footerTitle center">Información de contacto</p>
-        
-            <div class="row row-cols-2">
-                <div class="col justify-content center"><a  href="./pages/contacto.html#contacto"><img src="./assets/img/home.png" alt="direccion"></a>  
-                    <p class="footerText">Dirección de contacto </p>
-                </div>
-                <div class="col justify-content center"><a href="./pages/contacto.html#contacto"><img src="./assets/img/phone.png" alt="telefono"> </a>
-                    <p class="footerText">Teléfono de contacto </p>
-                </div>
-                <div class="col justify-content center"><a href="./pages/contacto.html#contacto"><img src="./assets/img/location.png" alt="mapa">   </a>
-                    <p class="footerText">Localizanos en el mapa</p>
-                </div>
-                <div class="col justify-content center"><a href="./pages/contacto.html#formulario"><img src="./assets/img/pencil.png" alt="formulario"></a>  
-                    <p class="footerText">Formulario de contacto</p>
-                </div>
+        <p class="footerTitle center">Información de contacto</p>
+    
+        <div class="row row-cols-2">
+            <div class="col-12 col-sm-6 justify-content center"><a  href="./pages/contacto.html#contacto"><img src="./assets/img/home.png" class="animated swing "  alt="direccion"></a>  
+                <p class="footerText">Dirección de contacto </p>
             </div>
-            <br>
-        <div class="center">
-            <a href="https://www.instagram.com/"><img src="./assets/img/instagram.svg" class="redes animate__animated animate__pulse" alt="instagram" ></a>
-
-            <a href="https://twitter.com/"><img src="./assets/img/twitter.svg" class="redes animate__animated animate__pulse" alt="twitter" ></a>
-
-            <a href="https://www.facebook.com/"><img src="./assets/img/facebook.svg" class="redes animate__animated animate__pulse" alt="facebook"></a>
+            <div class="col-12 col-sm-6 justify-content center"><a href="./pages/contacto.html#contacto"><img src="./assets/img/phone.png" class="animated swing "  alt="telefono"> </a>
+                <p class="footerText">Teléfono de contacto </p>
+            </div>
+            <div class="col-12 col-sm-6 justify-content center"><a href="./pages/contacto.html#contacto"><img src="./assets/img/location.png" class="animated swing "  alt="mapa">   </a>
+                <p class="footerText">Localizanos en el mapa</p>
+            </div>
+            <div class="col-12 col-sm-6 justify-content center">
+                <a href="../pages/contacto.html#formulario"><img src="./assets/img/pencil.png" class="animated swing " alt="formulario"></a>  
+                
+                <p class="footerText">Formulario de contacto</p>
+            </div>
         </div>
-        </div>
-    <!--finaliza footer-->
-    </footer>
+        <br>
+    <div class="center">
+        <a href="https://www.instagram.com/" target="_blank"><img src="./assets/img/instagram.svg" class="redes icon" alt="instagram" ></a>
+
+        <a href="https://twitter.com/" target="_blank"><img src="./assets/img/twitter.svg" class="redes icon icont" alt="twitter" ></a>
+
+        <a href="https://www.facebook.com/" target="_blank"><img src="./assets/img/facebook.svg" class="redes icon iconf " alt="facebook"></a>
+
+        <a href="https://www.youtube.com/" target="_blank"><img src="./assets/img/yt.svg" class="redes icon icony " alt="youtube"></a>
+    </div>
+    </div>
+<!--finaliza footer-->
+</footer>
     <script src="./js/bootstrap.bundle.min.js"></script>
+
 <!--finaliza body-->
 </body>
 </html>

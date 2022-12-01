@@ -14,22 +14,34 @@
 <!--inicia body-->
 <body class="fondo">
     <!--inicia header-->
-    <header class="encabezado">
-        <!--logotipo-->
-        <img class="logo animate__animated animate__pulse" src="../assets/img/zentulogo2.png" alt="logotipo ZenTu">
-        
+    <header class="sticky-top">        
         <!--inicia nav-->
-        <nav>
-            <ul class="menu">
-                <li><a class="link" href="../index.html">Inicio</a></li>
-                <li><a class="link" href="./nosotros.html">Nosotros</a></li>
-                <li><a class="link" href="./servicios.html">Servicios</a></li>
-                <li><a class="link" href="./productos.html">Productos</a></li>
-                <li><a class="link" href="./contacto.html">Contacto</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-md navbar-light encabezado ">
+            <div class="container-fluid ">
+                <!--logotipo-->
+                <a class="navbar-brand" href="../index.html">
+                    <img class="logo " src="../assets/img/zentulogo2.png" alt="logotipo ZenTu"> 
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+
+
+            <div class="collapse navbar-collapse " id="navbarTogglerDemo02">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 menu">
+                        <li><a class="link" href="../index.html">Inicio</a></li>
+                        <li><a class="link" href="../pages/nosotros.html">Nosotros</a></li>
+                        <li><a class="link" href="../pages/servicios.html">Servicios</a></li>
+                        <li><a class="link" href="../pages/productos.html">Productos</a></li>
+                        <li><a class="link" href="../pages/contacto.html">Contacto</a></li>
+                    </ul>
+                </ul>
+            </div>
+            </div>
         <!--finaliza nav-->
         </nav>
-    <!--finaliza header-->
+    <!--finaliza header-->    
     </header>
 
     <main>
@@ -38,16 +50,13 @@
                 <h1 class="titulo animate__animated animate__pulse"> CONTACTO </h1>
             </div>
             <div class="logoGrande">
-                <img src="../assets/img/ZenTu logo (500 × 500 px).png"  alt="logotipo">
+                <img src="../assets/img/ZenTu logo (500 × 500 px).png" alt="logotipo">
             </div>
         </section>
 
         <section class="sectionSecundaria">
-            <div class="imagenInicio">
-                
                 <div class="container">
                     <div class="row">
-                        
                         <div class="col">
                             
                             <h2 id="contacto">Contacto</h2>
@@ -66,107 +75,116 @@
                             Buenos Aires
                             </p>
                         </div>
+
                         <div class="col"><div class="map">
                             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2322.285097613555!2d-58.37621030479923!3d-34.59892473996887!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccacba6e4fe6b%3A0x6f4e62ed8eff0d48!2sAv.%20C%C3%B3rdoba%20550%20C1054%2C%20C1054%20CABA!5e0!3m2!1ses!2sar!4v1669086563383!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="container">
-                <h2 id="formulario">Formulario de contacto</h2>
-                <form class="formulario">
-                    <div class="row">
-                        <div class="col">
-                            <fieldset class="field">
-                                <legend class="label">Complete sus datos</legend>
-                                
-                                <div class="label">
-                                    <label for="nombre"> Nombre: </label>
-                                    <br>
-                                    <input class="input" id ="nombre" name="nombre" type="text" minlength="3" maxlength="50" >
-                                </div>
-                                <div class="label">
-                                    <label for="mail">Correo electrónico: </label>
-                                    <br>
-                                    <input class="input" id="mail" name="mail" type="email" >
-                                </div>
-                                <div class="label">
-                                    <label for="telefono">Teléfono: </label>
-                                    <br>
-                                    <input class="input" id="telefono" name="telefono" type="text" >
-                                </div>
-                            </fieldset>
-                        </div>
-                        <div class="col">
-                            <fieldset class="field">
-                                <legend class="label">¿En qué procedimiento estaría interesada/o?</legend>
+            
+                <div class="container-fluid">
+                    
+                    <form class="formulario" >
+                        <h2 id="formulario">Formulario de contacto</h2>
+                    
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                <fieldset class="field">
+                                    <legend class="label">Complete sus datos</legend>
                                     
-                                <div class="label">
-                                    <input id="arrugas" name="tratamientos" type="checkbox" value="arrugas"  >
-                                    <label for="arrugas">Arrugas
-                                    </label>
-                                    <br>
-                                    <input id="vitaminas" name="tratamientos" type="checkbox" value="vitaminas" >
-                                    <label for="vitaminas">PHP
-                                    </label>
-                                    <br>
-                                    <input id="rejuvenecimiento" name="tratamientos" type="checkbox" value="rejuvenecimiento" >
-                                    <label for="rejuvenecimiento">Rejuvenecimiento
-                                    </label>
-                                    <br>
-                                    <input id="belleza" name="tratamientos" type="checkbox" value="belleza" >
-                                    <label for="belleza">Espacio de bienestar</label>
-                                    <br>
-                                    <input id="nutricion" name="tratamientos" type="checkbox" value="nutricion">
-                                    <label for="nutricion">Nutrición
-                                    </label>
-                                </div>
-                            </fieldset>
+                                    <div class="label">
+                                        <label for="nombre"> Nombre: </label>
+                                        <br>
+                                        <input class="input" id ="nombre" name="nombre" type="text" minlength="3" maxlength="50" >
+                                    </div>
+                                    <div class="label">
+                                        <label for="mail">Correo electrónico: </label>
+                                        <br>
+                                        <input class="input" id="mail" name="mail" type="email" >
+                                    </div>
+                                    <div class="label">
+                                        <label for="telefono">Teléfono: </label>
+                                        <br>
+                                        <input class="input" id="telefono" name="telefono" type="text" >
+                                    </div>
+                                </fieldset>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                <fieldset class="field">
+                                    <legend class="label">¿En qué procedimiento estaría interesada/o?</legend>
+                                        
+                                    <div class="label">
+                                        <input id="arrugas" name="tratamientos" type="checkbox" value="arrugas"  >
+                                        <label for="arrugas">Arrugas
+                                        </label>
+                                        <br>
+                                        <input id="vitaminas" name="tratamientos" type="checkbox" value="vitaminas" >
+                                        <label for="vitaminas">PHP
+                                        </label>
+                                        <br>
+                                        <input id="rejuvenecimiento" name="tratamientos" type="checkbox" value="rejuvenecimiento" >
+                                        <label for="rejuvenecimiento">Rejuvenecimiento
+                                        </label>
+                                        <br>
+                                        <input id="belleza" name="tratamientos" type="checkbox" value="belleza" >
+                                        <label for="belleza">Bienestar</label>
+                                        <br>
+                                        <input id="nutricion" name="tratamientos" type="checkbox" value="nutricion">
+                                        <label for="nutricion">Nutrición
+                                        </label>
+                                    </div>
+                                </fieldset>
+                            </div>
+                            <div class="col-lg-4 col-md-12 col-sm-12">
+                                <fieldset class="field">
+                                    <legend class="label"> Dejenos un comentario </legend>
+                                    <textarea  name="comentario" id="comentario" cols="50" rows="8" ></textarea>
+                                </fieldset>
+                            </div>
                         </div>
-                        <div class="col">
-                            <fieldset class="field">
-                                <legend class="label"> Dejenos un comentario </legend>
-                                <textarea  name="comentario" id="comentario" cols="50" rows="8" ></textarea>
-                            </fieldset>
+                    
+                        <div class="center">
+                            <input id="enviar" type="submit" value="Enviar">
                         </div>
-                    </div>
-                    <div class="center">
-                        <input id="enviar" type="submit" value="Enviar">
-                    </div>
-                </form>
-            </div>
+                    </form>
+                </div>
+            
         </section>
     </main>
 
 <!--inicia footer-->
 <footer class="footer">
-    <div class="container">
+    <div class="container-fluid">
         <!--<img class="logoFooter" src="./assets/img/zentulogo2.png" alt="logotipo ZenTu">-->
 
         <p class="footerTitle center">Información de contacto</p>
     
         <div class="row row-cols-2">
-            <div class="col justify-content center"><a  href="../pages/contacto.html#contacto"><img src="../assets/img/home.png" alt="direccion"></a>  
+            <div class="col-12 col-sm-6 justify-content center"><a  href="../pages/contacto.html#contacto"><img src="../assets/img/home.png" class="animated swing "  alt="direccion"></a>  
                 <p class="footerText">Dirección de contacto </p>
             </div>
-            <div class="col justify-content center"><a href="../pages/contacto.html#contacto"><img src="../assets/img/phone.png" alt="telefono"> </a>
+            <div class="col-12 col-sm-6 justify-content center"><a href="../pages/contacto.html#contacto"><img src="../assets/img/phone.png" class="animated swing "  alt="telefono"> </a>
                 <p class="footerText">Teléfono de contacto </p>
             </div>
-            <div class="col justify-content center"><a href="../pages/contacto.html#contacto"><img src="../assets/img/location.png" alt="mapa">   </a>
+            <div class="col-12 col-sm-6 justify-content center"><a href="../pages/contacto.html#contacto"><img src="../assets/img/location.png" class="animated swing "  alt="mapa">   </a>
                 <p class="footerText">Localizanos en el mapa</p>
             </div>
-            <div class="col justify-content center"><a href="../pages/contacto.html#formulario"><img src="../assets/img/pencil.png" alt="formulario"></a>  
+            <div class="col-12 col-sm-6 justify-content center">
+                <a href="../pages/contacto.html#formulario"><img src="../assets/img/pencil.png" class="animated swing " alt="formulario"></a>  
+                
                 <p class="footerText">Formulario de contacto</p>
             </div>
         </div>
         <br>
     <div class="center">
-        <a href="https://www.instagram.com/"><img src="../assets/img/instagram.svg" class="redes animate__animated animate__pulse" alt="instagram" ></a>
+        <a href="https://www.instagram.com/" target="_blank"><img src="../assets/img/instagram.svg" class="redes icon" alt="instagram" ></a>
 
-        <a href="https://twitter.com/"><img src="../assets/img/twitter.svg" class="redes animate__animated animate__pulse" alt="twitter" ></a>
+        <a href="https://twitter.com/" target="_blank"><img src="../assets/img/twitter.svg" class="redes icon icont" alt="twitter" ></a>
 
-        <a href="https://www.facebook.com/"><img src="../assets/img/facebook.svg" class="redes animate__animated animate__pulse" alt="facebook"></a>
+        <a href="https://www.facebook.com/" target="_blank"><img src="../assets/img/facebook.svg" class="redes icon iconf " alt="facebook"></a>
+
+        <a href="https://www.youtube.com/" target="_blank"><img src="../assets/img/yt.svg" class="redes icon icony " alt="youtube"></a>
     </div>
     </div>
 <!--finaliza footer-->

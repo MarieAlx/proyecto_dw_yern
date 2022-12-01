@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../assets/img/favicon.ico" type="image/x-ico" />
     <link rel="stylesheet"    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/styles.css">
     <title>Productos</title>
@@ -14,22 +15,34 @@
 <!--inicia body-->
 <body class="fondo">
     <!--inicia header-->
-    <header class="encabezado">
-        <!--logotipo-->
-        <img class="logo animate__animated animate__pulse" src="../assets/img/zentulogo2.png" alt="logotipo ZenTu">
-        
+    <header class="sticky-top">        
         <!--inicia nav-->
-        <nav>
-            <ul class="menu">
-                <li><a class="link" href="../index.html">Inicio</a></li>
-                <li><a class="link" href="./nosotros.html">Nosotros</a></li>
-                <li><a class="link" href="./servicios.html">Servicios</a></li>
-                <li><a class="link" href="./productos.html">Productos</a></li>
-                <li><a class="link" href="./contacto.html">Contacto</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-md navbar-light encabezado ">
+            <div class="container-fluid ">
+                <!--logotipo-->
+                <a class="navbar-brand" href="../index.html">
+                    <img class="logo " src="../assets/img/zentulogo2.png" alt="logotipo ZenTu"> 
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+
+
+            <div class="collapse navbar-collapse " id="navbarTogglerDemo02">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 menu">
+                        <li><a class="link" href="../index.html">Inicio</a></li>
+                        <li><a class="link" href="../pages/nosotros.html">Nosotros</a></li>
+                        <li><a class="link" href="../pages/servicios.html">Servicios</a></li>
+                        <li><a class="link" href="../pages/productos.html">Productos</a></li>
+                        <li><a class="link" href="../pages/contacto.html">Contacto</a></li>
+                    </ul>
+                </ul>
+            </div>
+            </div>
         <!--finaliza nav-->
         </nav>
-    <!--finaliza header-->
+    <!--finaliza header-->    
     </header>
 
     <main>
@@ -37,42 +50,82 @@
             <div>
                 <h1 class="titulo animate__animated animate__pulse"> PRODUCTOS </h1>
             </div>
-            <div class="logoGrande">
-                <img src="../assets/img/ZenTu logo (500 × 500 px).png"  alt="logotipo">
+            <!--inicia carrousel-->
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <video class="img-fluid" autoplay loop muted>
+                        <source src="../assets/videos/Encabezado.mp4" type="video/mp4" />
+                        </video>
+                    </div>
+                    <div class="carousel-item">
+                        <video class="img-fluid " autoplay loop muted>
+                        <source src="../assets/videos/Encabezado2.mp4" type="video/mp4" />
+                        </video>
+                    </div>
+                <div class="carousel-item">
+                    <video class="img-fluid" autoplay loop muted>
+                        <source src="../assets/videos/encabezadovideo.mp4" type="video/mp4" />
+                    </video>
+                </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
-            
+            <!--finaliza carrousel-->
         </section>
 
-        <div class="container">
-            <div class="row sectionSecundaria">
-                <div class="col imagenInicio">
-                    <img src="../assets/img/producto1.png" alt="producto 1"  >
-                </div>
-                <div class="col">
-                    <h2>Producto 1</h2>
-                    <p class="parrafo">El aliado perfecto para reducir visiblemente la celulitis. Suplemento dietario, diseñado con una fórmula única que contiene todos los ingredientes en un solo producto. Sus componentes a base de péptidos bioactivos de colágeno, centella asiática, vinagre de sidra de manzana, ginkgo biloba, rosa mosqueta e hibiscus, entre otros potentes extractos, logran la combinación ideal para disminuir la adiposidad localizada, otorgando un efecto estimulador del drenaje linfático. Información nutricional:
+        <!--comienza seccion secundaria-->
+        <section class="sectionSecundaria">
+            <div class="container-fluid">
+                <div class="row  ">
 
+                    <div class="col-sm-12 col-md-12 col-lg-6   imagenInicio mt-5 ">
+                        <img src="../assets/img/producto1.png" alt="producto 1" data-aos="fade-up" data-aos-delay="50">
+                    </div>
+
+                    <div class="col-sm-12 col-md-12 col-lg-6  mt-5 parrafo align-self-center"">
+                        <h2>Producto 1</h2>
+                        <p class="parrafo hypens">El aliado perfecto para reducir visiblemente la celulitis. Suplemento dietario, diseñado con una fórmula única que contiene todos los ingredientes en un solo producto. Sus componentes a base de péptidos bioactivos de colágeno, centella asiática, vinagre de sidra de manzana, ginkgo biloba, rosa mosqueta e hibiscus, entre otros potentes extractos, logran la combinación ideal para disminuir la adiposidad localizada, otorgando un efecto estimulador del drenaje linfático. Información nutricional:
                         Vitamina D3 Ayuda a la piel a protegerse de las agresiones externas y de la deshidratación, refuerza la barrera cutánea y mantiene la hidratación de la piel.
-                        
+                        </p>
+                        <p class="parrafo hypens">  
                         Vitamina C Antioxidante que ayuda a neutralizar los radicales libres que aceleran el envejecimiento y mejora la luminosidad de la piel.
-                        
+                        </p> 
+                        <p class="parrafo hypens">     
                         Zinc Es un mineral esencial para la salud y el desarrollo general. Participa en el metabolismo celular, en la formación de colágeno y refuerza el sistema inmune.
-                    </p>
+                        </p>
+                    </div>
                 </div>
-            </div>
-            <div class="row sectionSecundaria flex-row-reverse">
-                <div class="col imagenInicio"><img src="../assets/img/producto2.png" alt="Producto 2" >
+
+            <div class="row flex-row-reverse">
+                <div class="col-sm-12 col-md-12 col-lg-6  imagenInicio mt-5">
+                    <img src="../assets/img/producto2.png" alt="Producto 2" data-aos="fade-up" data-aos-delay="50">
                 </div>
-                <div class="col">
+                <div class="col-sm-12 col-md-12 col-lg-6  mt-5 parrafo align-self-center">
                     <h2>Producto 2</h2>
-                    <p class="parrafo">MASAJEADOR FACIAL DE JADE (Mini):
+                    <p class="parrafo hypens">
+                        MASAJEADOR FACIAL DE JADE (Mini):
 
                         El rodillo de Jade es un excelente producto para mantener la elasticidad de la piel, promover la circulación e integrar la energía natural.
                         La temperatura de la  piedra cierra los poros mientras que el rodillo promueve la circulación de la sangre.
                         La piedra permanece fresca incluso en condiciones de alta temperatura, y le da a la piel una sensanción placentera.
-                        
+                        </p>
+                        <p class="parrafo hypens">
                         Es fácil de usar y se puede utilizar en cualquier momento y lugar.
-                        
+                        </p>
+                        <p class="parrafo hypens">
                         Ventajas de su uso:
                         
                         Reduce la hinchazón y las ojeras alrededor de los ojos,
@@ -80,20 +133,24 @@
                         Mantiene la elasticidad de la piel, promueve la circulación sanguínea,
                         Sensación de suavidad en tu piel.
                         Utilizá el rodillo hacia arriba desde el mentón hasta la frente en la dirección contra la gravedad. 
-                        
+                        </p>
+                        <p class="parrafo hypens">
                         Además, el JADE  es la piedra correspondiente a la salud y sabiduria.
                         
                         El MINI roller de jade es ideal para párpados y comisuras de labios. El extremo inferior del roll termina en punto para ser usado en los puntos de acupuntura facial.
                         </p>
                 </div>
             </div>
-            <div class="row sectionSecundaria">
-                <div class="col imagenInicio"><img src="../assets/img/producto3.png" alt="Producto 3" >
+            <div class="row ">
+                <div class="col-sm-12 col-md-12 col-lg-6  mt-5 imagenInicio">
+                    <img src="../assets/img/producto3.png" alt="Producto 3" data-aos="fade-up" data-aos-delay="50" >
                 </div>
-                <div class="col  ">
+
+                <div class="col-sm-12 col-md-12 col-lg-6  mt-5 parrafo align-self-center">
                     <h2>Producto 3</h2>
                     
-                    <p class="parrafo ">Jabones ecológicos
+                    <p class="parrafo hypens ">
+                        Jabones ecológicos
                         Un jabón artesanal natural que sólo contiene el aceite que se ha utilizado y solidificado en la saponificación (de coco, de palma, de oliva…) Los aceites esenciales naturales que le aportan aroma y propiedades terapéuticas y cosméticas. Vegetales que pueden aportarle el color deseado o una textura especial.</p>
                 </div>
             </div>
@@ -108,37 +165,46 @@
 
     <!--inicia footer-->
 <footer class="footer">
-    <div class="container">
+    <div class="container-fluid">
         <!--<img class="logoFooter" src="./assets/img/zentulogo2.png" alt="logotipo ZenTu">-->
 
         <p class="footerTitle center">Información de contacto</p>
     
         <div class="row row-cols-2">
-            <div class="col justify-content center"><a  href="../pages/contacto.html#contacto"><img src="../assets/img/home.png" alt="direccion"></a>  
+            <div class="col-12 col-sm-6 justify-content center"><a  href="../pages/contacto.html#contacto"><img src="../assets/img/home.png" class="animated swing "  alt="direccion"></a>  
                 <p class="footerText">Dirección de contacto </p>
             </div>
-            <div class="col justify-content center"><a href="../pages/contacto.html#contacto"><img src="../assets/img/phone.png" alt="telefono"> </a>
+            <div class="col-12 col-sm-6 justify-content center"><a href="../pages/contacto.html#contacto"><img src="../assets/img/phone.png" class="animated swing "  alt="telefono"> </a>
                 <p class="footerText">Teléfono de contacto </p>
             </div>
-            <div class="col justify-content center"><a href="../pages/contacto.html#contacto"><img src="../assets/img/location.png" alt="mapa">   </a>
+            <div class="col-12 col-sm-6 justify-content center"><a href="../pages/contacto.html#contacto"><img src="../assets/img/location.png" class="animated swing "  alt="mapa">   </a>
                 <p class="footerText">Localizanos en el mapa</p>
             </div>
-            <div class="col justify-content center"><a href="../pages/contacto.html#formulario"><img src="../assets/img/pencil.png" alt="formulario"></a>  
+            <div class="col-12 col-sm-6 justify-content center">
+                <a href="../pages/contacto.html#formulario"><img src="../assets/img/pencil.png" class="animated swing " alt="formulario"></a>  
+                
                 <p class="footerText">Formulario de contacto</p>
             </div>
         </div>
         <br>
     <div class="center">
-        <a href="https://www.instagram.com/"><img src="../assets/img/instagram.svg" class="redes animate__animated animate__pulse" alt="instagram" ></a>
+        <a href="https://www.instagram.com/" target="_blank"><img src="../assets/img/instagram.svg" class="redes icon" alt="instagram" ></a>
 
-        <a href="https://twitter.com/"><img src="../assets/img/twitter.svg" class="redes animate__animated animate__pulse" alt="twitter" ></a>
+        <a href="https://twitter.com/" target="_blank"><img src="../assets/img/twitter.svg" class="redes icon icont" alt="twitter" ></a>
 
-        <a href="https://www.facebook.com/"><img src="../assets/img/facebook.svg" class="redes animate__animated animate__pulse" alt="facebook"></a>
+        <a href="https://www.facebook.com/" target="_blank"><img src="../assets/img/facebook.svg" class="redes icon iconf " alt="facebook"></a>
+
+        <a href="https://www.youtube.com/" target="_blank"><img src="../assets/img/yt.svg" class="redes icon icony " alt="youtube"></a>
     </div>
     </div>
 <!--finaliza footer-->
 </footer>
     <script src="../js/bootstrap.bundle.min.js"></script>
 
+    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
