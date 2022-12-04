@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&family=Roboto:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,700;1,300&family=Roboto&family=Yatra+One&display=swap');
 
 *{
     margin: 0;
@@ -33,38 +33,6 @@
     text-align: center;
     position: relative;
 }
-
-/* .link{
-    display: block; 
-    text-decoration: none;
-    color: rgb(184, 134, 11);
-    font-size: 2rem;
-    padding: 10px;
-}
-
-.link:hover{
-    color:rgba(143, 98, 16,0.5);
-    color:rgba(218, 165, 32,0.7) ;
-}
- */
-
-
-/* .encabezado ul li::before{
-    content: "";
-    height: 3px;
-    width: 0%;
-    background: rgba(236, 190, 75, 0.7);
-    position:absolute;
-    left: 0;
-    bottom: -12px;
-    transition: 0.4s ease-out;
-} 
-
-.encabezado ul li:hover::before{
-    width: 100%;
-}
- */
-
 
 .link{
     display: inline-block;
@@ -106,12 +74,11 @@
 
 .sectionPrincipal .titulo{
     color: rgba(143, 98, 16,0.5);
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Yatra One', cursive;
     font-size: 4rem;
     text-align: center;
     padding-bottom: 30px;
     animation-duration: 4.0s;
-    /* animation-iteration-count: infinite;  */ 
 }
 
 .sectionPrincipal .logoGrande{
@@ -128,13 +95,15 @@
     text-align: center;
     margin-top: 5vh;
     margin-bottom: 5vh;
-
     overflow-wrap: break-word;
-    
 }
 
 .interlineado{
     line-height: 1.2;
+}
+
+.sectionSecundaria {
+    padding-top: 20px;
 }
 
 .sectionSecundaria h2{
@@ -165,22 +134,57 @@
 
 .footer{
     background-color: rgba(255, 250, 250, 0.5); 
-    /* background: rgb(228,226,227);
-    background: linear-gradient(90deg, rgba(228,226,227,1) 0%, rgba(233,219,148,1) 100%); */ 
-    /* background: rgb(228,226,227);
-    background: linear-gradient(90deg, rgba(228,226,227,1) 0%, rgba(255,247,216,1) 100%); */
+/*     display: block;
+    background-image: none
+    overflow-x: hidden ; */
 }
 
-/* .logoFooter{
-    float: right;
-    margin-top: 3px;
-    margin-right: 5px;
-    margin-bottom: 5px;
-    position: relative;
-    width: 120px;
-    height: auto;
-    vertical-align: middle;
-} */
+
+@media only screen and (max-width: 600px) {
+    .footer{
+        background-color: rgba(255, 250, 250, 0.5); 
+        background-image: none;
+    }
+    .animated{
+        transition: none !important;
+        animation-name:none;
+        animation: none;
+    }
+    .swing{
+        transition: none !important;
+        animation-name:none;
+        animation: none;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .footer{
+        background-color: rgba(255, 250, 250, 0.5);
+        /* background-image: url(../assets/img/footer.png);  */
+        max-width: 100%; 
+        background-repeat: no-repeat;
+        overflow-x:hidden;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+        .footer{
+            background-color: rgba(255, 250, 250, 0.5);
+            max-width: 100%;
+            background-repeat: no-repeat;
+            overflow-x:hidden;
+        }
+} 
+
+@media only screen and (min-width: 1200px) {
+        .footer{
+            overflow-x: hidden ;
+            background-image: url(../assets/img/footergd.png); 
+            background-size: 100%;
+            background-repeat: no-repeat;
+            overflow-x:hidden; 
+        } 
+}
 
 .footerText{
     font-family: 'Roboto', sans-serif;
@@ -190,7 +194,7 @@
     padding-right: 5vh;
     padding-bottom: 2.5vh;
     padding-left: 3vh;
-
+    z-index:1;
 }
 
 .footerTitle {
@@ -200,9 +204,8 @@
     font-size: 3rem;
     text-decoration: none;
     text-align: center;
-    
+    z-index:1;
 }
-
 
 .center{
     text-align: center;
@@ -220,7 +223,6 @@
     position: relative;
     display: flex;
     justify-content: center;
-
 }
 
 .redes::after{
@@ -236,7 +238,6 @@
 }
 
 .animated { 
-    
     animation-iteration-count: infinite;
     -webkit-animation-duration: 10s; 
     animation-duration: 10s; 
@@ -274,7 +275,6 @@
     
 }
 
-
 .icont{
     animation-delay: 0.5s;
 }
@@ -311,7 +311,6 @@
     padding-right: 2vw;
     border-radius: 5px;
     border-style:outset;
-    /* background-color: gray; */
 }
 
 .formulario h2{
@@ -368,7 +367,6 @@
 
 
 .snip1585 {
-
     color: #fff;
     display: inline-block;
     /* display: flex; */
@@ -485,7 +483,6 @@
     -webkit-transition-delay: 0.1s;
     transition-delay: 0.1s;
 }
-
 
 @keyframes flota {
     0%{
