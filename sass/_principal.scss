@@ -1,0 +1,17 @@
+.sectionPrincipal{
+    padding-top: 30px;
+    .titulo{
+        color: $color;
+        font-family: $titulo;
+        font-size: 4rem;
+        text-align: $centrado;
+        padding-bottom: 30px;
+        animation-duration: 4.0s;
+    }
+    .logoGrande{
+        text-align: $centrado;
+        padding-top: 0px;
+        margin-top: 0px;
+        margin-bottom: 10px;
+    }
+}

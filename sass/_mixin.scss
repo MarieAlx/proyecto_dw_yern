@@ -1,0 +1,7 @@
+@mixin form-radius($radius) {
+    border-radius: $radius ;
+}
+
+@mixin form-style($style) {
+    border-style: $style;
+}

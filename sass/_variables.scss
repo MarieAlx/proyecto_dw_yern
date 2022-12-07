@@ -1,0 +1,12 @@
+$centrado: center;
+$color:  rgba(143, 98, 16,0.5);
+$titulo: 'Yatra One', cursive;
+$haches: 'Josefin Sans', sans-serif;
+$texto: 'Roboto', sans-serif;
+
+
+$bordes:(
+    borde-solid-principal :  1px solid black,
+    borde-solid-dospx:  2px solid $color,
+    borde-solid-trespx:  3px solid rgb(197, 194, 34),
+);

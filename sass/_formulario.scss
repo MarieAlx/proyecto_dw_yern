@@ -1,0 +1,57 @@
+.formulario{
+    font-family: $texto;
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+    margin-left: 5vh;
+    margin-top: 5vh ;
+    margin-bottom: 5vh;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    padding-right: 2vw;
+    @include form-radius(50px);
+    @include form-style(outset); 
+    color: map-get($bordes, borde-solid-dospx);
+    
+    
+    .h2{
+        padding-bottom: 5vh;
+    }
+    .label{
+        font-family: $texto;
+        font-size: 1.5rem;
+        letter-spacing: 0.2rem;
+        margin-left: 5vh;
+        margin-bottom: 2vh;
+        margin-right: 5vh;
+    }
+    .inputl{
+        font-family: $texto;
+        font-size: 2rem;
+        letter-spacing: 0.2rem;
+    }
+    
+    .input{
+        width: 99%;
+    }
+    .field {
+        margin-bottom: 5vh;
+        font-family: $texto;
+        font-size: 1.5rem;
+    }
+    .ta{
+        font-family: $texto;
+        font-size: 1.5rem;
+        width: 99%;
+        margin-left: 2vh;
+    }
+    .labelLabel{
+        font-family: $texto;
+        font-size: 1.5rem;
+        letter-spacing: 0.2rem;
+    }
+    .inputl{
+        font-family: $texto;
+        font-size: 1.5rem;
+        letter-spacing: 0.2rem;
+    }
+}

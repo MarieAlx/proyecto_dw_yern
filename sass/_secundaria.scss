@@ -1,0 +1,169 @@
+.sectionSecundaria {
+    padding-top: 20px;
+    .h2{
+        color: $color;
+        font-family: $haches;
+        font-size: 2rem;
+        text-align: $centrado;
+    }
+    a{
+        text-decoration: none;
+    }
+    .imagenInicio {
+        .img{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 100%;
+            align-items: $centrado;
+        }
+        .snip1585 {
+            color: #fff;
+            display: inline-block;
+            /* display: flex; */
+            font-family: $texto;
+            font-size: 24px;
+            margin: 10px;
+            /* max-width: 315px; */
+            max-width: auto;
+            min-width: 230px;
+            overflow: hidden;
+            position: relative;
+            text-align: $centrado;
+            width: 100%;
+        }
+        
+        .snip1585 * {
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            -webkit-transition: all 0.45s ease;
+            transition: all 0.45s ease;
+        }
+        
+        .snip1585:before,
+        .snip1585:after {
+            background-color: rgba(188, 167, 181, 0.5);
+            border-top: 50px solid rgba(237, 236, 226, 0.5);
+            border-bottom: 50px solid rgba(224, 216, 224, 0.5);
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            content: '';
+            -webkit-transition: all 0.3s ease;
+            transition: all 0.3s ease;
+            z-index: 1;
+            opacity: 0;
+        }
+        
+        .snip1585:before {
+            -webkit-transform: scaleY(2);
+            transform: scaleY(2);
+        }
+        
+        .snip1585:after {
+            -webkit-transform: scaleY(2);
+            transform: scaleY(2);
+        }
+        
+        .snip1585 img {
+            vertical-align: top;
+            max-width: 100%;
+            backface-visibility: hidden;
+        
+        }
+        
+        .snip1585 figcaption {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            align-items: $centrado;
+            z-index: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: $centrado;
+            line-height: 1.1em;
+            opacity: 0;
+            z-index: 2;
+            -webkit-transition-delay: 0s;
+            transition-delay: 0s;
+        }
+        
+        .snip1585 h3 {
+            font-size: 1em;
+            font-weight: 400;
+            letter-spacing: 1px;
+            margin: 0;
+            text-transform: uppercase;
+        }
+        
+        .snip1585 h3 span {
+            display: block;
+            font-weight: 700;
+        }
+        
+        .snip1585 a {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 3;
+        }
+        
+        .snip1585:hover > img,
+        .snip1585.hover > img {
+            opacity: 0.7;
+        }
+        
+        .snip1585:hover:before,
+        .snip1585.hover:before,
+        .snip1585:hover:after,
+        .snip1585.hover:after {
+            -webkit-transform: scale(1);
+            transform: scale(1);
+            opacity: 1;
+        }
+        
+        .snip1585:hover figcaption,
+        .snip1585.hover figcaption {
+            opacity: 1;
+            -webkit-transition-delay: 0.1s;
+            transition-delay: 0.1s;
+        }
+        
+    }
+    .subtitulo{
+        color: $color;
+        font-family: $haches;
+        font-size: 4rem;
+        text-align: $centrado;
+    }
+    .parrafo{
+        font-family: $haches;
+        font-size: 1.5rem;
+        letter-spacing: 0.1rem;
+        text-align: $centrado;
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+        overflow-wrap: break-word;
+    }
+    .interlineado{
+        line-height: 1.2;
+    }
+    .hypens{
+        hyphens: auto;
+    }
+    .map{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 2vh;
+        width: fit-content;
+        border-color: goldenrod;
+        border-style: groove;
+    }
+}
