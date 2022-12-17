@@ -67,8 +67,8 @@
         height:50px; 
         border:goldenrod; 
         border-radius:15px; 
-        color:rgb(141, 100, 10); 
-        background-color: rgb(228, 198, 124);
+        color:rgb(51, 36, 3); 
+        background-color: rgba(228, 198, 124,0.5);
         margin: 0 auto;
         display: flex;
         align-items: center;
@@ -76,7 +76,7 @@
         transition-duration: 0.4s;
         &:hover {
             border: 1px solid rgb(228, 233, 155);
-            color: rgb(150, 135, 7);
+            color: rgb(158, 106, 10);
         }
     }
 }
