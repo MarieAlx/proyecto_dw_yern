@@ -8,10 +8,23 @@
         padding-bottom: 30px;
         animation-duration: 4.0s;
     }
+    .caja{
+        width: 50%;
+        max-width: 500px;
+        margin: 0 auto;
+    }
     .logoGrande{
         text-align: $centrado;
         padding-top: 0px;
         margin-top: 0px;
         margin-bottom: 10px;
+        width: 100%;
+        height: auto;
+        
+        @media only screen and (max-width: 480px){
+            
+            max-width:100%;
+            
+        }
     }
 }

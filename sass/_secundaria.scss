@@ -157,7 +157,7 @@
     .hypens{
         hyphens: auto;
     }
-    .map{
+    .map-r{
         display: block;
         margin-left: auto;
         margin-right: auto;
@@ -165,5 +165,40 @@
         width: fit-content;
         border-color: goldenrod;
         border-style: groove;
+        
+    }
+    .map {
+        overflow:hidden;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom:56.25%; 
+        position:relative;
+        height:0;
+        border-color: goldenrod;
+        border-style: groove;  
+        
+        @media only screen and (max-width: 480px){
+            border-color: none;
+            border-style: none;
+        }
+        .iframe{
+            
+            height:100%;
+            width:100%;
+            position:absolute;
+            left: 0; 
+            right: 0; 
+            margin-left: auto; 
+            margin-right: auto; 
+            
+            
+            @media only screen and (max-width: 480px){
+                width:80%;
+            
+            }
+
+        }
     }
 }
+    
+    

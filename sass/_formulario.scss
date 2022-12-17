@@ -5,9 +5,12 @@
     margin-left: 5vh;
     margin-top: 5vh ;
     margin-bottom: 5vh;
+    margin-right: 5vh;
     padding-top: 3vh;
     padding-bottom: 3vh;
     padding-right: 2vw;
+    padding-left: 2vw;
+    background-color: rgba(253, 219, 249,0.5);
     @include form-radius(50px);
     @include form-style(outset); 
     color: map-get($bordes, borde-solid-dospx);
@@ -15,12 +18,14 @@
     
     .h2{
         padding-bottom: 5vh;
+        text-align: $centrado;
+        color: $color;
     }
     .label{
         font-family: $texto;
         font-size: 1.5rem;
         letter-spacing: 0.2rem;
-        margin-left: 5vh;
+        margin-left: 2vh;
         margin-bottom: 2vh;
         margin-right: 5vh;
     }
@@ -41,8 +46,11 @@
     .ta{
         font-family: $texto;
         font-size: 1.5rem;
-        width: 99%;
-        margin-left: 2vh;
+        width: 97%;
+        margin-left: 1vh;
+        margin-right: 1vh;
+        padding-left: 1vh;
+        padding-right: 1vh;
     }
     .labelLabel{
         font-family: $texto;
@@ -53,5 +61,22 @@
         font-family: $texto;
         font-size: 1.5rem;
         letter-spacing: 0.2rem;
+    }
+    .boton {
+        width:100px; 
+        height:50px; 
+        border:goldenrod; 
+        border-radius:15px; 
+        color:rgb(141, 100, 10); 
+        background-color: rgb(228, 198, 124);
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition-duration: 0.4s;
+        &:hover {
+            border: 1px solid rgb(228, 233, 155);
+            color: rgb(150, 135, 7);
+        }
     }
 }
